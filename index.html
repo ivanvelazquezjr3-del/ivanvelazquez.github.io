@@ -1,65 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8" />
-  <title>Iván Velázquez | Portafolio</title>
+  <title>Iván Velázquez | Nanotechnology Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 { font-size: 2.5rem; }
-    h2 { margin-top: 3rem; }
-    a { color: #2563eb; text-decoration: none; }
-    .project { margin-bottom: 2rem; }
-  </style>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
 <body>
 
-  <section class="hero">
+  <!-- Dark mode toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <!-- HERO -->
+  <section class="hero fade-in">
     <h1>Iván Velázquez</h1>
-    <p>Ingeniero en Nanotecnología · Biomateriales · Nanodispositivos</p>
+    <p>Nanotechnology Engineer · Biomaterials · Nanodevices</p>
   </section>
 
+  <!-- CONTENT -->
   <section class="container">
-    <div class="card">
-      <h2>Sobre mí</h2>
+
+    <div class="card fade-in">
+      <h2>About Me</h2>
       <p>
-        Ingeniero en Nanotecnología con experiencia en biomateriales,
-        microfluídica y desarrollo de dispositivos para ingeniería de tejidos.
+        Nanotechnology Engineer with experience in biomaterials,
+        microfluidic systems, and tissue engineering devices.
+        Strong background in experimental research and materials characterization.
       </p>
     </div>
 
-    <div class="card">
-      <h2>Proyectos</h2>
+    <div class="card fade-in">
+      <h2>Projects</h2>
 
-      <p class="project-title">🧬 Vasos sanguíneos artificiales</p>
-      <p>Hidrogeles elastina–gelatina con propiedades mecánicas optimizadas.</p>
+      <div class="projects-grid">
 
-      <p class="project-title">🔬 Microfluídica para cultivo celular</p>
-      <p>Diseño y caracterización de dispositivos de flujo controlado.</p>
+        <div class="project-card">
+          <img src="img/vessels.png" alt="Artificial Blood Vessels">
+          <h3>Artificial Blood Vessels</h3>
+          <p>
+            Development of elastin–gelatin hydrogels with optimized
+            mechanical properties for vascular tissue engineering.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img src="img/microfluidics.png" alt="Microfluidics">
+          <h3>Microfluidic Platforms</h3>
+          <p>
+            Design and characterization of microfluidic devices
+            for controlled cell culture and flow experiments.
+          </p>
+        </div>
+
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Contacto</h2>
+    <div class="card fade-in">
+      <h2>Contact</h2>
       <p>
         <a href="mailto:ivanvelazquezjr3@gmail.com">Email</a> ·
         <a href="#">LinkedIn</a> ·
-        <a href="CV_Ivan_Velazquez.pdf">CV</a>
+        <a href="CV_Ivan_Velazquez.pdf">Download CV</a>
       </p>
     </div>
+
   </section>
 
-</body>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
